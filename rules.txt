@@ -1,0 +1,22 @@
+1. Opis gry i zasady.
+
+Tekstowa gra w ktorej komputer (Host) losuje slowo, ktore jest izogramem (izogram jest to wyraz
+w w ktorym nie powtarzaja sie zadne litery) i informuje uzytkownika (Guesser) o ilosci liter
+w slowie. Uzytkownik (Guesser) stara sie zgadnac co to za slowo. Komputer (Host) po po kazdej probie
+zwraca liczbe Cows & Bulls. Liczba przy slowie Cows oznacza, ze litera wystepuje w slowie, lecz na zlej
+pozycji, liczba przy slowie Bulls oznacza poprawna litere na poprawnej pozycji. Gra konczy sie kiedy
+liczba przy Bulls bedzie taka sama jak dlugosc slowa wylosowanego przez komputer.
+Caly sens gry polega na tym, iz uzykownik w przypadku nawet otrzymania dodatniego wyniku przy Bulls, nie zna dokladnej
+lokalizacji tej litery.
+
+2. Przyklad gry.
+
+1. sekretne slowo to KREM
+2. proba LIST zwraca 0 Bulls, 0 Cows (zadna litera nie jest trafiona)
+3. proba MIGA zwraca 0 Bulls, 1 Cows (litera M wystepuje lecz jest na zlej pozycji)
+4. proba KIMA zwraca 1 Bulls, 1 Cows (litera K wystepuje na poprawnej pozycji, litera M
+wystepuje na zlej pozycji)
+5. proba KROS zwraca 2 Bulls, 0 Cows (litery K, R wystepuja na poprawnej pozycji)
+6. gra konczy sie po odgadnieciu slowa KREM - 4 Bulls, 0 cows
+
+3. Prosuszanie sie po programie.
