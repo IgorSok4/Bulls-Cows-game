@@ -17,7 +17,8 @@ class Dictionary:
         SelectedWords = Allwords.loc[:,f"{letters} letters"]
         Word = random.choice(SelectedWords)
         return Word
-    def selectword():
+    def selectword(self):
+        print(self)
         if GameOptions.letters == 4:
             return Dictionary.DrawAWord(4)
         elif GameOptions.letters == 5:
@@ -31,7 +32,7 @@ class Validator:
     def CheckIfIsogram(word):
         letter = set()
         return not any(i in letter or letter.add(i) for i in word)
-          
+
 class BullsAndCows:
     def __init__(self, bulls, cows):
         self.bulls = bulls
@@ -62,7 +63,7 @@ class Engine:
         return bullscows.bulls, bullscows.cows   
     def gameEngine(self):
         Cword = Dictionary
-        word = Cword.selectword()
+        word = Cword.selectword(" ")
         letters = GameOptions.letters
         rounds = GameOptions.rounds
         print(f"Computer has choosen a new word. This word has {letters} letters. Word {Validator.CheckIfIsogram(word)} isogram")
