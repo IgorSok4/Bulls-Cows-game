@@ -1,3 +1,5 @@
+--PL--
+
 1. Opis gry i zasady.
 
 Tekstowa gra w ktorej komputer (Host) losuje slowo, ktore jest izogramem (izogram jest to wyraz
@@ -19,4 +21,25 @@ wystepuje na zlej pozycji)
 5. proba KROS zwraca 2 Bulls, 0 Cows (litery K, R wystepuja na poprawnej pozycji)
 6. gra konczy sie po odgadnieciu slowa KREM - 4 Bulls, 0 cows
 
-3. Prosuszanie sie po programie.
+--ENG-- Google Translator
+
+1. Game description and rules.
+
+A text game in which the computer (host) randomizes a word which is an isogram (an isogram is a word
+in which no letters are repeated) and informs the user (Guesser) about the number of letters
+in word. The user (Guesser) tries to guess what the word is. Computer (Host) after each attempt
+returns the number of Cows & Bulls. The number next to the word Cows means that the letter is in the word, but on the wrong one
+position, the number next to the word Bulls means the correct letter in the correct position. The game ends when
+the number next to the Bulls will be the same as the length of the word drawn by the computer.
+The whole point of the game is that the user, even if he gets a positive result with Bulls, does not know the exact
+the location of that letter.
+
+2. Game example.
+
+The 1st secret word is CREAM
+2nd try LIST returns 0 Bulls, 0 Cows (no letter is matched)
+3rd attempt to FLASH returns 0 Bulls, 1 Cows (the letter M is present but in the wrong position)
+4th KIMA attempt returns 1 Bulls, 1 Cows (the letter K is in the correct position, the letter M
+is in the wrong position)
+5. KROS attempt returns 2 Bulls, 0 Cows (letters K, R are in the correct position)
+6. The game ends when the word CREAM is guessed - 4 Bulls, 0 cows
