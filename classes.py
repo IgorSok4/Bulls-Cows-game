@@ -72,7 +72,7 @@ class Engine:
             user_word = input(f"Your guess ({letters} letters): ")
             user_word = user_word.upper()
             comp_word = word
-            print(comp_word)
+#             print(comp_word)
             if (len(user_word) == letters) and Validator.CheckIfIsogram(user_word):
                 print(f"{Engine.returnBullsAndCows(comp_word, user_word)[0]} Bulls & {Engine.returnBullsAndCows(comp_word, user_word)[1]} Cows!")
                 if Engine.returnBullsAndCows(comp_word, user_word)[0] == letters:
